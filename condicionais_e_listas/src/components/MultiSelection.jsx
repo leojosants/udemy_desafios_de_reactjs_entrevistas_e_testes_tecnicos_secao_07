@@ -18,12 +18,14 @@ const MultiSelection = () => {
     };
 
     const HandleToggleSelectAll = (event) => {
-        if (event.target.getAttribute('data') === 'select_all') {
+        const data_attribute = event.target.getAttribute('data');
+
+        if ( data_attribute=== 'select_all') {
             setItems(items.map((item) => (
                 { ...item, isSelected: true }
             )));
         }
-        else if (event.target.getAttribute('data') === 'unselect_all') {
+        else if (data_attribute === 'unselect_all') {
             setItems(items.map((item) => (
                 { ...item, isSelected: false }
             )));
