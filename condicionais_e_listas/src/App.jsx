@@ -1,4 +1,5 @@
 import './App.css';
+import MultiSelection from './components/MultiSelection';
 import NestedLists from './components/NestedLists';
 import SwithRender from './components/SwithRender';
 import Ternary from './components/Ternary';
@@ -29,6 +30,12 @@ function App() {
       <div>
         <h2>4 - Componente baseado em tempo</h2>
         <TimeBased />
+      </div>
+
+      {/* 5 - multi selection */}
+      <div>
+        <h2>5 - Multi seleção</h2>
+        <MultiSelection />
       </div>
     </>
   );

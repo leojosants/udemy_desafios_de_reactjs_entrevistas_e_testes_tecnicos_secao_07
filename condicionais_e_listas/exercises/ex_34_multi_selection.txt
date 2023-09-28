@@ -1,0 +1,8 @@
+Ex 34: Multi seleção
+
+● Crie um componente que renderiza uma lista;
+● Ele deve ter três funcionalidades;
+    ● 1 - Marcar um item selecionado por clique;
+    ● 2 - Marcar todos os itens;
+    ● 3 - Desmarcar todos os itens;
+● Você pode colocar um estilo inline ou classe para marcar os elementos selecionados;
