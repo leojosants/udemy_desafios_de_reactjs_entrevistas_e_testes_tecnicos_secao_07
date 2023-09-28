@@ -1,0 +1,5 @@
+Ex 30: Renderização com ternário
+
+● Crie um componente que contém uma condição ternária;
+● Ele recebe uma prop com true ou false;
+● Se for true deve renderizar um elemento, se for false outro;
