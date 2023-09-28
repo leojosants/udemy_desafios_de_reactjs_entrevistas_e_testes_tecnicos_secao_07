@@ -1,4 +1,5 @@
 import './App.css';
+import NestedLists from './components/NestedLists';
 import SwithRender from './components/SwithRender';
 import Ternary from './components/Ternary';
 
@@ -15,6 +16,12 @@ function App() {
       <div>
         <h2>2 - renderização com swith</h2>
         <SwithRender programming_language='html' />
+      </div>
+
+      {/* 3 - nested lists */}
+      <div>
+        <h2>3 - Listas aninhadas</h2>
+        <NestedLists />
       </div>
     </>
   );

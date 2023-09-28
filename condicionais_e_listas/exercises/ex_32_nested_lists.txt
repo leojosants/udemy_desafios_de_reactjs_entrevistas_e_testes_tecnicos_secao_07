@@ -1,0 +1,5 @@
+Ex 32: Listas aninhadas
+
+● Crie um componente que renderiza uma lista;
+● Esta lista é baseada num array que contém outras listas, ou seja, array de arrays;
+● A estrutura deve ficar um loop de lista, com outro loop interno de listas;
