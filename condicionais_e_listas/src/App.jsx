@@ -2,6 +2,7 @@ import './App.css';
 import NestedLists from './components/NestedLists';
 import SwithRender from './components/SwithRender';
 import Ternary from './components/Ternary';
+import TimeBased from './components/TimeBased';
 
 function App() {
   return (
@@ -22,6 +23,12 @@ function App() {
       <div>
         <h2>3 - Listas aninhadas</h2>
         <NestedLists />
+      </div>
+
+      {/* 4 - time-based component */}
+      <div>
+        <h2>4 - Componente baseado em tempo</h2>
+        <TimeBased />
       </div>
     </>
   );

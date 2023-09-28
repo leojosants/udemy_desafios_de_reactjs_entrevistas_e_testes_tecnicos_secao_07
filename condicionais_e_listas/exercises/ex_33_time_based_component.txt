@@ -1,0 +1,5 @@
+Ex 33: Componente baseado em tempo
+
+● Crie um novo componente;
+● Ele deve consultar a hora do sistema, pode-se utilizar a classe Date;
+● Baseado no período: manhã, tarde ou noite, Exiba: “Bom dia”, “Boa tarde” ou “Boa noite”;
