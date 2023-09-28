@@ -1,0 +1,5 @@
+Ex 31: Renderização com switch
+
+● Crie um componente que contém um switch;
+● Ele deve receber uma prop que coordena o que o switch vai renderizar;
+● Crie mais de dois cases, para renderizar elementos diferentes;
