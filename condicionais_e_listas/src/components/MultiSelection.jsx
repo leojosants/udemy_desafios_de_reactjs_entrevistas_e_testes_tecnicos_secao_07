@@ -17,25 +17,28 @@ const MultiSelection = () => {
         )));
     };
 
-    const HandleSelectAll = () => {
-        setItems(items.map((item) => (
-            { ...item, isSelected: true }
-        )));
-    };
-
-    const HandleDeselectAll = () => {
-        setItems(items.map((item) => (
-            { ...item, isSelected: false }
-        )));
+    const HandleToggleSelectAll = (event) => {
+        if (event.target.getAttribute('data') === 'select_all') {
+            setItems(items.map((item) => (
+                { ...item, isSelected: true }
+            )));
+        }
+        else if (event.target.getAttribute('data') === 'unselect_all') {
+            setItems(items.map((item) => (
+                { ...item, isSelected: false }
+            )));
+        }
     };
 
     return (
         <div style={{ border: '1px solid red' }}>
 
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <button onClick={HandleSelectAll}>Selecionar items</button>
 
-                <button onClick={HandleDeselectAll}>Desmarcar to</button>
+                <button onClick={(event) => HandleToggleSelectAll(event)} data='select_all'>Selecionar items</button>
+
+                <button onClick={(event) => HandleToggleSelectAll(event)} data='unselect_all'>Desmarcar items</button>
+
             </div>
 
             <p>Item(s) selecionado(s): {selected_count}</p>
